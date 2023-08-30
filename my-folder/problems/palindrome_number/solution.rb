@@ -1,9 +1,7 @@
 # @param {Integer} x
 # @return {Boolean}
 def is_palindrome(x)
-    if x.to_s.reverse == x.to_s
-        return true
-    else
-        return false
-    end
+    return false if x < 0
+
+    return x.to_s == x.to_s.reverse
 end
